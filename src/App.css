@@ -36,3 +36,141 @@
     transform: rotate(360deg);
   }
 }
+
+.total-view {
+  display:flex;
+  height: 40vh;
+  min-height: 260px;
+  width: 40vw;
+  min-width: 630px;
+  border: 1px solid darkgrey;
+
+}
+
+.task-overview {
+  max-width: 230px;
+}
+
+.search-container {
+  display:flex;
+  height: 20px;
+  width: inherit;
+  border: 1px solid darkgrey;
+}
+
+#search-icon {
+  height: 15px;
+  margin: 2px 2px;
+}
+
+#searchbar {
+  border:none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: inherit;
+  width: inherit;
+}
+
+.task-list {
+  max-height: calc(40vh - 20px - 27px);
+  min-height: calc(inherit - 20px - 27px);
+  overflow-y: scroll;
+}
+
+.task-card {
+  height: 85px;
+  width: 210px;
+  border-bottom: 1px solid darkgrey;
+  padding: 2px 2px;
+  overflow: hidden;
+}
+
+.task-card img {
+  margin: 2px 2px 2px 2px;
+  height: 14px;
+  width: 14px;
+}
+
+.task-card * {
+  padding: 0px 0px;
+  margin: 1px 1px; 
+  text-align: left;
+}
+
+.task-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.task-title {
+  font-weight:600;
+}
+
+.task-description {
+  font-size: 14px;
+  color: rgb(102, 102, 102);
+  overflow: hidden;
+  white-space: wrap;
+  text-overflow: ellipsis;
+  
+}
+
+.task-priority {
+  display: inline-flex;
+  font-size: 14px;
+  align-items: center;
+}
+
+.task-due-date {
+  display: inline-flex;
+  font-size: 14px;
+  align-items: center;
+}
+
+
+.create-task  {
+  height: 40vh;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+fieldset {
+  display:flex;
+  flex-flow: column nowrap;
+  height:inherit;
+  min-height: 245px;
+  text-align: left;
+  align-content: start;
+  border:none;
+  border-left: 1px solid darkgrey;
+}
+
+.create-task input, select, button {
+  margin: 0px 0px 5px;
+  padding: 0px 11px;
+  height: 22px;
+  border-radius: 11px;
+  border: 1px grey solid;
+  width:160px;
+}
+
+.create-task textarea {
+  margin: 0px 0px 5px 0px;
+  padding: 0px 11px;
+  min-height: 48px;
+  max-height: 600px;
+  border-radius: 11px;
+  border: 1px grey solid;
+  min-width: 380px;
+  max-width: 900px;
+}
+
+
+.create-task label {
+  margin: 0px 5px;
+  bottom: 0px;
+  padding: 0px 5px;
+  font-size: 14px;
+}
